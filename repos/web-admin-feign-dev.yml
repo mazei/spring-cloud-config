@@ -22,13 +22,10 @@ feign:
     enabled: true
 
 management:
-  endpoint:
-      health:
-        show-details: always
   endpoints:
     web:
       exposure:
-        include: ["health", "info"] #"hystrix.stream"]
+        include: hystrix.stream
       base-path: /
 
 eureka:
