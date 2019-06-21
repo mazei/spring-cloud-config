@@ -21,12 +21,12 @@ feign:
   hystrix:
     enabled: true
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: hystrix.stream
-      base-path: /
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: hystrix.stream
+#      base-path: /
 
 eureka:
   client:
